@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(236, 234, 234, 0.726);
+    
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/*QUITAR COLOR A LOS LINKS*/
+
+.tituloCont{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.tituloCont h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.tituloCont p{
+    font-weight: 800;
+}
+
+.indBack{
+    background-image: url("../assets/luke-southern-9yCYGgPe5Kg-unsplash.jpg");
+    background-size:cover;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: rgba(3, 3, 3, 0.87);
+    text-align: center;
+}
+
+
+a:visited{
+    text-decoration: none;
+}
+  
+.principal{
+    display: grid;
+}
+
+.contenedor{
+display: flex;
+margin: 0;
+padding: 0;
+height: 133vh;
+width: 100vw;
+overflow: hidden;
+}
+   
+.header{ 
+    background-color: rgba(0, 0, 0, .93);
+}
+
+
+.header__logo{
+    text-align: center;
+    background-color: rgba(0, 0, 0, .30);
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+
+li{
+    display: inline-block;
+    margin-left: 0.8rem;
+}
+
+.header__lista{
+    display: inline-block;
+    width: 100vw;
+    position: relative;
+    background-color: #b7ddce;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer{
+    margin-top: 75.6vh;
+    padding:2px;
+    background-color: gray;
+    position:relative;
+    color: black;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+main>section>article>div>a{
+    color: black;
+}
+
+
+.planes-flex{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    
+
+}
+
+.planes-flex article{
+    display: flex; 
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);  
+    overflow: hidden;
+    border: 1px solid rgba(221, 220, 220, 0.7); 
+    
+}
+
+
+
+
+
+.tipoPlan{
+    display: flex;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.2rem;
+    padding-top: 1rem;
+}
+
+.planPrice{
+    display: flex;
+    justify-content: center;
+    background-color: #c2f0ac;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.planDesc{
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    margin-top: 2px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    color: black;
+
+
+}
+
+.icono{
+    width: 1rem;
+    display: flex;
+    height: 1rem;
+    padding-right: 0.5rem;
+}
+
+.contact{
+    padding-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+.formulario{
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formStyle{
+    padding-right: 0.2rem;
+    padding-left:0.2rem;
+    font-size: 0.75rem;
+}
+
+.inputStyle{
+    box-sizing: border-box;
+    color:rgb(29, 55, 88);
+    border: 2px black;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.boton {
+    color: #fff;
+    padding: 2px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #343a40
+  }
+
+  .cobertura{
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  @media only screen and (max-device-width : 884px) {
+    .planes-flex{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .planes-flex article{
+        margin-bottom: 1.5rem;
+        
+    }
+
+
+
+  }
