@@ -5,66 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Net+ | Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/netplus.ico">
 </head>
 
-<body>
+<body id="page-container">
     <header class="header">
-        <div class="header__logo">
+        <div class="text-center">
             <a href="../index.html">
                 <img src="../assets/netexto.png" alt="logo" width="150" height="50">
             </a> 
         </div>
-        
-    <div class="header__lista">
-        <nav class="shift">
-            <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/planes.html">Planes</a></li>
-            <li><a href="../pages/cobertura.html">Cobertura</a></li>
-            <li><a href="../pages/quienessomos.html">Quienes Somos</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light header__lista">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/planes.html">Planes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/cobertura.html">Cobertura</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/quienessomos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>  
+                </li>
+              </ul>
+              
+            </div>
+          </div>
         </nav>
     </div>
     </header>
-    <main class="Box">
-        <section class="formularioBox">
-            <form action="" method="get" enctype="text/plain">
-                        <div>
-                            <span class="conTitulo">Contactate con nosotros!</span>
-                        </div>
-                        <div class="formulario">
-                        <div class="formStyle">
-                            <label for="nombre" class="conTitulo">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" class="inputStyle" required>
-                        </div>
-                        <div class="formStyle">
-                            <label for="telefono" class="conTitulo">Teléfono</label>
-                            <input type="number" id="telefono" name="telefono" class="inputStyle" required>
-                        </div>      
-                        <div class="formStyle">
-                            <label for="correo" class="conTitulo">Correo</label>
-                            <input type="email" id="correo" name="correo" class="inputStyle" required>
-                        </div>
-                        <div class="formStyle">
-                            <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Escribe aquí tu consulta" required class="inputStyle"></textarea>
-                        </div>
-                        <input type="submit" value="Enviar" class="boton">
-                        </div>
-                    </div>         
-            </form>    
-        </section>
-    </main>
-    
-    </div>
-    <div class="footer"> 
-        <footer>
-            COPYRIGHT@2022 NETPLUS | ROSARIO, SANTA FE, ARGENTINA
-        </footer>   
-    </div>
-    
 
+
+    <div class="container mt-5">
+      <h4 class="text-center">¡Dejanos tus datos y te contactaremos!</h4>
+      <br>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="col-md-6">
+          <label for="Apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="Apellido" required>
+        </div>
+        <div class="col-md-8">
+          <label for="email" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-4">
+          <label for="telefono" class="form-label">Telefono</label>
+          <input type="text" class="form-control" id="telefono" placeholder="+54 (111) 111-1111">
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+  </div>
+
+</div>
+
+    <footer id="footer" class="text-center text-lg-start bg-light text-muted container-fluid">
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2022 Copyright | <a class="text-reset fw-bold" href="../index.html">netplus.com.ar</a>
+        </div>
+      </footer>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

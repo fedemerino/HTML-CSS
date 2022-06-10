@@ -13,47 +13,94 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="indBack">
+<body id="page-container">
+
     <header class="header">
-        <div class="header__logo">
+        <div class="text-center">
             <a href="./index.html">
                 <img src="./assets/netexto.png" alt="logo" width="150" height="50">
             </a> 
         </div>
-    <div class="header__lista">
-        <nav class="shift">
-            <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/planes.html">Planes</a></li>
-            <li><a href="./pages/cobertura.html">Cobertura</a></li>
-            <li><a href="./pages/quienessomos.html">Quienes Somos</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-    </header>
-    <main class="main">
-        <section class="principal">
-         <div class="tituloCont">
-             <div>
-                <h1>FIBRA ÓPTICA</h1> 
-             </div>
-             <div>
-            <p> •Internet de alta velocidad sin límites de datos ni tiempo</p>
-            <p> •Velocidades de hasta 300Mbps.</p>
-            <p>• Servicios residenciales, para empresas y dedicados.</p>
-            <h3>¡Elegí el plan que mas se adapte a vos con tan solo un click!</h3>
+        <nav class="navbar navbar-expand-lg navbar-light header__lista">
+          <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/planes.html">Planes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/cobertura.html">Cobertura</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/quienessomos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/contacto.html">Contacto</a>  
+                </li>
+              </ul>
+              
             </div>
-        </div>   
-           
-        </section>
-    </main>
-    </div>
+          </div>
+        </nav>
+    </header>
 
-        <footer class="footer">
-            COPYRIGHT@2022 NETPLUS | ROSARIO, SANTA FE, ARGENTINA
-        </footer>   
-    
+
+
+    <main>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/assets/pexels-marek-levak-2265488.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-black">
+                    <h5>LA MEJOR CONEXIÓN</h5>
+                    <p>Ofrecemos el mejor servicio para hogares y empresas.</p>
+                  </div>            
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/assets/pexels-cottonbro-4709289.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>LOS MEJORES PRECIOS</h5>
+                    <p>Contamos con diferentes planes para que elijas el que mejor se adapte a vos.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/pexels-alena-darmel-7862590.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>BAJAS LATENCIAS</h5>
+                    <p>Disfruta de una gran experiencia gracias a nuestra conexión por fibra óptica. </p>
+                  </div>            
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </main>
+
+
+
+
+<footer id="footer" class="text-center text-lg-start bg-light text-muted footer">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright | <a class="text-reset fw-bold" href="./index.html">netplus.com.ar</a>
+  </div>
+</footer>
+   
 <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

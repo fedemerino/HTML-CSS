@@ -5,32 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Net+ | Cobertura</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/netplus.ico">
 </head>
 
-<body class="cobBack">
+<body class="cobBack" id="page-container">
     <header class="header">
-        <div class="header__logo">
+        <div class="text-center">
             <a href="../index.html">
                 <img src="../assets/netexto.png" alt="logo" width="150" height="50">
             </a> 
         </div>
-        
-    <div class="header__lista">
-        <nav class="shift">
-            <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/planes.html">Planes</a></li>
-            <li><a href="../pages/cobertura.html">Cobertura</a></li>
-            <li><a href="../pages/quienessomos.html">Quienes Somos</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light header__lista">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/planes.html">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/cobertura.html">Cobertura</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/quienessomos.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>  
+              </li>
             </ul>
-        </nav>
+            
+          </div>
+        </div>
+      </nav>
     </div>
     </header>
 
-    <main class="main">
+
+    <main class="main" id="main">
         <div class="cobertura tituloCont">
             <h2>COBERTURA</h2>
             <h4>Haz click en el menú desplegable del mapa para verificar si tienes cobertura</h4>
@@ -40,14 +60,12 @@
         </div>
     </main>
     
-    <div class="footer"> 
-        <footer>
-            <div>
-            COPYRIGHT@2022 NETPLUS | ROSARIO, SANTA FE, ARGENTINA
-            </div>
-        </footer>   
-    </div>
+    <footer id="footer" class="text-center text-lg-start bg-light text-muted container-fluid">
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2022 Copyright | <a class="text-reset fw-bold" href="../index.html">netplus.com.ar</a>
+        </div>
+      </footer>   
     
-
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
