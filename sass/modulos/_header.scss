@@ -1,0 +1,14 @@
+.header{
+    background-color:rgba(0,0,0,.93);
+    &__logo{
+        text-align: center;
+        background-color: rgba(0, 0, 0, .30);
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    &__lista{
+        background-color: #b7ddce;
+        text-align: center;
+        font-weight: 800;
+    }
+}
