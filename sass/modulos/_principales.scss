@@ -1,22 +1,28 @@
       
 #footer{
+    width: 100vw;
     font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.05)
     }
     
+@mixin mainId(){
+        display: flex;
+        justify-content: space-between;
+        min-height: 80vh;
+        justify-items: center;
+        padding-top: 2rem;
+
+}
+
 #main{
-        display: flex;
-        justify-content: space-between;
-        min-height: 80vh;
-        justify-items: center;
-        padding-top: 2rem;
-    }
+  @include mainId();
+}
 #mainquienes{
-        display: flex;
-        justify-content: space-between;
-        min-height: 80vh;
-        justify-items: center;
-        padding-top: 2rem;
+  @include mainId();
     }
+
+
+
 a{
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;

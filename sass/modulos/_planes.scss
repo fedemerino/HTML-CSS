@@ -1,3 +1,6 @@
+
+$centrar: (centro: center);
+
 .art{
     display: flex;
     flex-direction: column;
@@ -22,13 +25,15 @@
     }
 }
 
+
+
 .tipoPlan{
     font-weight: 800;
     text-transform: uppercase;
     display: flex;
     color: black;
-    text-align: center;
-    justify-content: center;
+    text-align: map-get($centrar,centro);
+    justify-content: map-get($centrar,centro);
     font-family: 'Roboto', sans-serif;
     margin: 0.2rem;
     padding-top: 1rem;
@@ -38,7 +43,7 @@
 .planPrice{
     font-weight: 800;
     display: flex;
-    justify-content: center;
+    justify-content: map-get($centrar,centro);
     background-color: #c2f0ac;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -47,7 +52,7 @@
 
 .planDesc{
     display: flex;
-    align-items: center;
+    align-items: map-get($centrar,centro);
     padding: 0.2rem;
     margin-top: 2px;
     font-family: 'Roboto', sans-serif;
@@ -60,9 +65,9 @@
 .planButton{
     height: 5rem;
     display: flex;
-    align-items: center;
+    align-items: map-get($centrar,centro);
     justify-items: flex-end;
-    justify-content: center;
+    justify-content: map-get($centrar,centro);
     margin-top: 2px;
     font-family: 'Roboto', sans-serif;
     width: 100%;

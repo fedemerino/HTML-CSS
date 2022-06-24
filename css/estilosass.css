@@ -139,12 +139,14 @@ body {
 
 .cobBack {
   background-image: url("../assets/pexels-monstera-7411910.jpg");
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 #footer {
-  font-weight: 800; }
+  width: 100vw;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.05); }
 
 #main {
   display: flex;
@@ -347,7 +349,7 @@ input::-webkit-inner-spin-button {
   #main {
     display: flex;
     justify-content: space-between;
-    min-height: 0;
+    min-height: 80vh;
     justify-items: center;
     padding-top: 2rem; }
   #mainquienes {
@@ -355,7 +357,8 @@ input::-webkit-inner-spin-button {
     justify-content: space-between;
     min-height: 80vh;
     justify-items: center;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    min-height: 70vh; }
   .quienesBack {
     background-image: url("../assets/pexels-marek-levak-2265488.jpg");
     background-size: cover;
@@ -363,9 +366,9 @@ input::-webkit-inner-spin-button {
     height: 100vh; }
   .cobBack {
     background-image: url("../assets/pexels-monstera-7411910.jpg");
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh; }
   .indBack {
     background-image: url("../assets/luke-southern-9yCYGgPe5Kg-unsplash.jpg");
