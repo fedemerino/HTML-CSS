@@ -5,6 +5,7 @@ $centrar: (centro: center);
     display: flex;
     flex-direction: column;
     height: 25rem;
+    flex-wrap: nowrap;
 }
      
 .planes-flex{

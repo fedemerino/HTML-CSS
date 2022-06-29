@@ -6,6 +6,7 @@
     <meta name="keywords" content="Internet, WiFI, Conexión, Router, Planes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Net+ | Planes</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../assets/netplus.ico">
     <link rel="stylesheet" href="../css/estilosass.css">
@@ -52,13 +53,14 @@
     <main class="main container-fluid">
         <div class="tituloCont">
                 <div>
+                    <p></p>
                     <h2>NUESTROS PLANES</h2> 
                     <p style="font-weight:800;">¡Elegí el plan que más se adapte a vos!</p>
                  </div>
         </div>
     </main>
         <section class="planes-flex container" id="main">
-            <article class="art">
+            <article class="art" data-aos="flip-left">
                 <p class="tipoPlan">Internet 100mb</p>
                 <p class="planPrice">$999 final por mes</p>
                 <div class="planDesc">
@@ -73,6 +75,9 @@
                 <div class="planDesc">
                     <img src="../assets/dollar.png" class="icono"><span class="planDesc">Instalación sin cargo</span>
                 </div>  
+                <div class="planDesc">
+                    <span class="icono"></span>
+                </div>
                 <div></div>
                     <p></p>
                 </div>  
@@ -81,7 +86,7 @@
                 </div>
             </article>
     
-            <article class="art">
+            <article class="art" data-aos="flip-right">
                 <div class="tipoPlan">Internet 200mb</div>
                 <p class="planPrice">$1.299 final por mes</p>
                 <div class="planDesc">
@@ -104,7 +109,7 @@
                 </div>
             </article>
     
-            <article class="art">
+            <article class="art" data-aos="flip-left">
                 <p class="tipoPlan">Internet 300mb</p>
                 <p class="planPrice">$1.699 final por mes</p>
                 <div class="planDesc">
@@ -137,6 +142,10 @@
           </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 

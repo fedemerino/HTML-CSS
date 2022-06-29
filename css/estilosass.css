@@ -23,7 +23,8 @@ body {
 .art {
   display: flex;
   flex-direction: column;
-  height: 25rem; }
+  height: 25rem;
+  flex-wrap: nowrap; }
 
 .planes-flex {
   margin-top: 3px;
