@@ -1,4 +1,6 @@
-
+.spacer{
+  padding: 1rem;
+}
 
 #footer{
     width: 100vw;
@@ -18,10 +20,225 @@
 #main{
   @include mainId();
 }
+
 #mainquienes{
   @include mainId();
-    }
+  min-height: 30vh;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  justify-content: center;
+  background-color: white;
+   }
+    
+.quienesSomosCont{
+  padding-top: 3rem;
+  display: flex;
+}
 
+.quienesSomos{
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 16ch;
+  font-size: 5rem;
+  animation: typing 1.5s steps(16), blink .5s infinite step-end alternate;
+  overflow:hidden;
+}
+
+@keyframes typing{
+  from{width: 0;}
+  
+}
+
+@keyframes blink{
+  50% {border-color: transparent;}
+}
+
+.quienesSomosContenedor{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.quienesSomosSectionLeft{
+  flex-direction: row;
+  height: 80vh;
+  width: 50vw;
+  padding-bottom: 2rem;
+  background-color: #cccaca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+
+}
+.quienesSomosSectionLeft img{
+ margin-top: 1rem;
+ width: 45vw;
+ height: 70vh; 
+ border-radius: 2px;
+}
+
+.quienesTitulo{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.2rem;
+}
+
+.quienesTexto{
+  padding-top: 0rem;
+  margin-left: 5rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  width: 40vw;
+}
+
+
+.quienesSomosSectionRight{
+  border-radius: 1px;
+  flex-direction: row;
+  height: 80vh;
+  width: 50vw;
+  padding-bottom: 2rem;
+  background: rgb(204,202,202);
+  background: linear-gradient(128deg, rgba(204,202,202,1) 47%, rgba(173,173,173,1) 74%, rgba(83,83,83,1) 93%);
+}
+
+.contactanosIcono{
+  display:flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.contactanosBox{
+  padding-top: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  color: #ffed80;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  height: 25vh;
+  width: 100vw;
+  background-color: #000000;
+  img{
+    width: 2rem;
+    height: 2rem;
+  }
+  p{
+    padding-left: 1rem;
+  }
+}
+
+.boton{
+  background-color: #ffed80;
+  display: flex;
+  height: 5rem;
+  align-items: map-get($centrar,centro);
+  justify-items: flex-end;
+  justify-content: map-get($centrar,centro);
+  margin-top: 2px;
+  width: 35vw;
+  color: black;
+}
+
+.contactanosBoton{
+  height: 100vh;
+  width: 100vw;
+  color: rgb(0, 0, 0);
+  padding: 2px 10px;
+  text-transform: uppercase;
+  font-size: large;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 2px;
+  border: none;
+  background-color: #ffed80;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+
+.contactanosBoton:hover{
+  background-color: #cccaca;
+}
+
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #54595e17;
+}
+
+.contactContenedor{
+  display: flex;
+  justify-content: center;
+}
+
+.contactUsContainer{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-items: center;
+align-content: space-between;
+justify-content: space-evenly;
+width: 70vw;
+padding-top: 1rem;
+background-color: #54595e17;
+padding-bottom: 3rem;
+}
+
+
+
+.contactUsCard{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-items: center;
+align-items: center;
+border-radius: 2px;
+width: 16rem;
+height: 16rem;
+padding: 1rem;
+background-color: rgb(255, 255, 255);
+  &__tipo{
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+  }
+  &__texto{
+    margin-top: 2rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+.contactUsCard img{
+max-height: 6rem;
+max-width: 6rem;
+
+}
 
 
 a{
@@ -45,26 +262,75 @@ a:visited{
     }
  
     
-.tituloCont{
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border-radius: 3px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-    }
-    
-    
-.tituloCont h1{
-        font-family: 'Roboto', sans-serif;
-        font-size: 2rem;
-    }
-    
-    
-.tituloCont p{
-        font-weight: 550;
-    }
 
+  
+.divisor{
+height: 6vh;
+width: 0.4vw;
+background-color: #c2f0ac;
+}
+
+
+.tituloCont{
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          align-content: center;
+          padding-top: 2rem;
+          
+    }
+    
+    
+
+
+.titulo{
+  display: flex;
+  flex-direction: row;
+  padding-left: 3rem;
+  width: 75vw;
+  background-color: #54595e17;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  h2{
+    padding-top: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+  }
+  p{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+  
+  }
+}
+
+.titulo2{
+  @extend .titulo;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  justify-content: center;
+  p{
+    margin-right: 4rem;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+
+.tituloBox{
+  display: flex;
+  flex-direction: column;
+}
+      
 .principal{
         display: grid;
     }
@@ -145,6 +411,9 @@ nav.shift div div ul li a {
     }
   }
 
+
+
+
   nav div div ul li a,nav div div ul li a:after,nav div div ul li a:before {
     transition: all 0.3s;
   }
@@ -197,3 +466,4 @@ nav.shift div div ul li a {
         background: rgb(51, 51, 51);
       }
     }
+

@@ -9,10 +9,6 @@
     
 }
 
-.quienesBack{
-    @include backgrounds(url("../assets/pexels-marek-levak-2265488.jpg"),cover,no-repeat);
-}
-
 
 .cobBack{
     @include backgrounds(url("../assets/pexels-monstera-7411910.jpg"),cover,no-repeat);

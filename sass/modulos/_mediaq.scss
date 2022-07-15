@@ -1,18 +1,24 @@
 @media only screen and (max-device-width : 992px) {
     .planes-flex{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        height: fit-content;
     
     }
+
+    .titulo p, .titulo2 p {
+        margin-left: 0rem;
+    }
+
     .planes-flex article{
         margin-bottom: 1.5rem;
         
     }
     .map-responsive iframe{
-        top:0;
-        height:100%;
-        width:70%;
-        position:absolute;
+        top: 15rem;
+        height:60vh;
+        width:70vw;
+        position:fixed; 
     }
     
     #main{
@@ -21,11 +27,18 @@
     #mainquienes{
         @include mainId();
         min-height: 70vh;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .quienesBack{
-        @include backgrounds(url("../assets/pexels-marek-levak-2265488.jpg"),cover,no-repeat);
-        height: 100vh;
+    .contactUsCard{
+        width: 12rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
     }
+    .contactUsContainer{
+        flex-wrap: wrap;
+    }
+  
     .cobBack{
         @include backgrounds(url("../assets/pexels-monstera-7411910.jpg"),cover,no-repeat);
         background-position:center;
@@ -43,4 +56,108 @@
     .d-md-block {
         display: block!important;
     }
+
+    .carousel-inner img{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    .quienesSomos{
+        font-size: 3rem;
+    }
+    .quienesSomosContenedor{
+        flex-direction: column;
+    }
+    .quienesSomosSectionRight{
+        width: 100vw;
+        height: fit-content;
+        padding-right: 2rem;
+    }
+    .quienesSomosSectionLeft{
+        width: 100vw;
+        height: 60vh;
+        min-width: 100vw;
+        img{
+            width: 75vw;
+            height: 50vh;
+        }
+    }
+
+    .quienesTitulo{
+        margin-top: 0.5rem;
+    }
+
+    .quienesTexto{
+        width: 75vw;
+        padding: 0rem;
+        margin-right: 1rem;
+        
+    }
+    
+    .contactanosBox{
+        font-size: 1.5rem;
+        flex-direction: column;
+        height: fit-content;    
+        align-items: center;
+        padding-bottom: 1rem;
+        }
+
+        .contactanosBoton{
+            font-size: 1rem;
+        }
+        
+        .quienesSomosSectionRight{
+            background: rgb(204,202,202);
+      background: linear-gradient(165deg, rgba(204,202,202,1) 47%, rgba(173,173,173,1) 74%, rgba(83,83,83,1) 93%);
+        }
+
+    }
+
+
+  @media only screen and (max-device-width : 1260px) {
+
+    .contactUsContainer{
+        flex-wrap: wrap;
+        padding-top: 1rem;
+    }
+
+    .contactUsCard{
+        border-radius: 1px;
+        width: 14rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    #mainquienes{
+        @include mainId();
+        min-height: 0vh;
+        justify-content: center;
+    }
   }
+  @media only screen and (max-device-width : 1660px) {
+  .map-responsive iframe{
+    top:15rem;
+    height:60vh;
+    width:60vw;
+    position:absolute;
+}
+}
+
+
+@media only screen and (max-device-width : 1174px) and (min-device-width : 992px) {
+
+    .quienesSomosSectionRight{
+        height: 95vh;
+    }
+    .quienesSomosSectionLeft{
+        height: 95vh;
+    }
+    .contactanosBox{
+        padding-top: 2rem;
+    }
+    .contactanosBoton{
+        font-size: 1.2rem;
+    }
+}
+
